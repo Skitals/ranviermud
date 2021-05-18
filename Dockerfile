@@ -14,7 +14,7 @@ COPY . /usr/src/ranvier
 
 RUN npm ci
 
-RUN npm run init -y
+RUN yes | npm run init
 
 EXPOSE 4000
 
