@@ -10,11 +10,11 @@ COPY package.json /usr/src/ranvier/
 
 COPY package-lock.json /usr/src/ranvier/
 
+COPY . /usr/src/ranvier
+
 RUN npm ci
 
 RUN npm run init -y
-
-COPY . /usr/src/ranvier
 
 EXPOSE 4000
 
